@@ -23,17 +23,11 @@ def write_hdf5(arr,outfile):
 # groundTruth_imgs_train = "./DRIVE/training/1st_manual/"
 # borderMasks_imgs_train = "./DRIVE/training/mask/"
 #test
-original_imgs_test =  "./selected_paths.txt" #"20_sample_images/originals/" #"../sample_retinal_images_colorfundus/"
+filepaths =  "./selected_paths.txt" #"20_sample_images/originals/" #"../sample_retinal_images_colorfundus/"
 
 # load filepaths
-<<<<<<< HEAD
 with open(filepaths) as f:
     original_imgs_test = f.readlines()
-
-=======
-f = open(original_imgs_test, "r")
->>>>>>> parent of 092e5b1... Fixed bug in prepare_datasets_DRIVE.py
-files = f.readlines()
 
 groundTruth_imgs_test = "20_sample_images/dummy_mask/" #"../dummy_masks_for_colorfundus/"
 borderMasks_imgs_test = "20_sample_images/border_masks/" #"../border_masks_for_colorfundus/"
